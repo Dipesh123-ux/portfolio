@@ -1,0 +1,653 @@
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+.header
+{
+    height:100vh;
+    background:linear-gradient(rgba(0 , 0, 0 , 0.5),rgba(0 , 0, 0 , 0.5)) ,url(./luca-bravo-XJXWbfSo2f0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.main-head
+{    display:inline-block;
+     position: relative;
+     margin:auto;
+      margin-top: 20%;
+     font-family: sans-serif;
+     left:35vw;
+     font-size: 35px;
+     letter-spacing: 2px;
+
+}
+.static
+{
+    color:rgba(255, 255, 255, 0.699);
+}
+.dynamic ,.blinker
+{
+    color:rgb(67, 125, 139);
+}
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(53, 7, 49);
+    transition: 0.5s;
+    overflow: hidden;
+    
+  }
+  
+  .overlay-content {
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    margin-top: 30px;
+   
+  }
+  
+  .overlay a {
+    position: relative;
+    left:70vw;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 40px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Sacramento', cursive;
+  }
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 10px;
+    left: 85vw;
+    font-size: 80px;
+    cursor: pointer;
+  }
+  .ic
+  {
+    clip-path: ellipse(15% 40% at 0% 50%);
+    background-color: #da6bda;
+    width:13%;
+    height:50%;
+    margin-top: -15%;
+  }
+  .icon
+  { 
+      color:black;
+      position: relative;
+      left:0px;
+      top:45%;
+      font-size:30px;
+      cursor: pointer;
+  }
+  .pic
+  {
+     position: relative;
+     height:150px;
+     width: 150px;
+     top:15vh;
+     left:14vw;
+     background:url(./mypic.jpg);
+     background-size: cover;
+     background-position: center;
+     border-radius: 50%;
+     box-shadow: 1px 1px 10px grey;
+
+  }
+
+  .social
+  {
+     position: relative;
+     display:flex;
+     top:45vh;
+     left:8vw;
+
+  }
+  .circle-outer
+{
+    position: relative;
+    height:40px;
+    width:40px;
+    left: 10px;
+    margin: 25px;
+    
+}
+.circle a
+{
+    position: absolute;
+    top: -8%;
+    left:-2%;
+    color: black;
+    font-size: 15px;
+    z-index: 1;
+}
+.circle
+{
+    position:relative;
+    justify-content:center;
+    height:40px;
+    width:40px;
+    justify-content:center;
+    align-items:center;
+    border-radius: 50%;
+    box-shadow: 0px 10px 40px rgba(0,0,0,0.5);
+    background:linear-gradient(black , white);
+
+}
+
+.circle:before {
+    content: " ";
+    position:absolute;
+    height:40px;
+    width: 40.5px;
+    background:linear-gradient(black , white);
+    border-radius:50%;
+    transform:rotateZ(-270deg);
+
+
+}
+
+
+.circle:after
+{
+    content: "";
+    position: absolute;
+    height:40.5px;
+    width:40.5px;
+    top:0px;
+    transform:rotateZ(160deg);
+    border-radius: 50%;
+
+}
+
+.circle:hover
+{
+
+    transform:  translate(0px , -10px ) ;
+    transition:all 0.5s ease;
+    
+}
+.circle1:hover:after
+{
+    overflow: hidden;
+    background: #3b5998;
+    transition:all 0.5s ease;
+}
+.circle2:hover:after
+{
+    overflow: hidden;
+    background: #00aced;
+    transition:all 0.5s ease;
+}
+.circle3:hover:after
+{
+    overflow: hidden;
+    background: #0077b5;
+    transition:all 0.5s ease;
+}
+.circle4:hover:after
+{
+    overflow: hidden;
+    background: #d81c3f;
+    transition:all 0.5s ease;
+}
+.circle5:hover:after
+{
+    overflow: hidden;
+    background: #6cc644;
+    transition:all 0.5s ease;
+}
+.circle:hover i
+{
+    color: white;
+    transition: all 0.5s;
+}
+.quote
+{
+  position:relative;
+  top:29%;
+  color:#818181;
+  font-family: 'Sacramento', cursive;
+  text-transform: capitalize;
+  left:30vw;
+  font-size: 30px;
+  visibility: visible;
+
+}
+.quote:hover
+{
+  color:white;
+  transition: all 0.5s ease;
+}
+.cir
+{
+  display: flex;
+  margin:auto;
+  margin-top:100px
+}
+.skill
+{
+  height:250vh;
+  width: 100%;
+  background-color:rgb(46, 44, 44);
+  overflow: hidden;
+}
+
+.box
+{
+  height: 200px;
+  width: 200px;
+  margin:auto;
+  margin-top:30px;
+  border-radius:20px;
+  box-shadow: 2px 3px 8px rgba(0 , 0, 0 , 0.5);
+}
+#box2
+{
+  visibility:hidden;
+}
+hr
+{
+  opacity: 0.5;
+}
+.upper
+{
+  height:60px;
+  width:100%;
+  background-color:#8a258a;
+}
+.heading {
+  position: relative;
+  margin-left: 46%;
+  top:10px;
+  color: #272222;
+  font-size:30px;
+  font-family:sans-serif;
+
+}
+.heading:hover, .heading:focus {
+  color: #f1f1f1;
+  transition:all 0.5s;
+}
+.project
+{
+  height:100vh;
+  width: 100%;
+  background-color: rgb(46, 44, 44);
+}
+.slide-container
+{
+  display:flex;
+  flex-direction:column;
+  height:70vh;
+  width:70vw;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin:auto;
+  position: relative;
+  margin-top:5.5%;
+}
+.slide
+{
+  position: absolute;
+  opacity: 0;
+  height: 80vh;
+  width:30vw;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  box-shadow: 3px 5px 8px rgba(0 , 0, 0 , 0.5);
+  border:2px solid white;
+}
+.arrow
+{
+  
+  font-size:25px;
+  background-color: transparent;
+  border: none;
+  color:white;
+}
+.left-arrow
+{
+  position:absolute;
+  left:10vw;
+ 
+}
+.right-arrow
+{
+  position:absolute;
+  right:10vw;
+}
+.arrow:hover, .arrow:focus {
+  color: wheat;
+  font-size: 30px;
+  transition:all 0.5s;
+}
+.left-arrow:hover
+{
+  transform:translateX(-5px);
+  transition: all 0.5s;
+}
+.right-arrow:hover
+{
+  transform:translateX(5px);
+  transition: all 0.5s;
+}
+.active
+{
+  opacity: 1;
+}
+.aboutme
+{
+  height:200vh;
+  width: 100%;
+  background-color: rgb(46, 44, 44);
+}
+.details
+{
+  height: 90vh;
+  width: 60%;
+  margin:auto;
+  margin-top:40px;
+  border-radius:20px;
+  box-shadow: 2px 5px 10px rgba(0 , 0, 0 , 0.5);
+}
+.details p
+{
+  position: relative;
+  display:flex;
+  flex-wrap: wrap;
+  margin-left:30px;
+  margin-right: 30px;
+  font-size: 25px;
+  top:70px;
+  bottom:30px;
+  letter-spacing: 2px;
+  color:white;
+  font-family: 'MonteCarlo', cursive;
+}
+span
+{
+  color:#17e4eb;
+  
+}
+h3
+{
+  position: relative;
+  left:30%;
+  top:90px;
+  font-size: 30px;
+  color: #17e4eb;
+  font-family: 'MonteCarlo', cursive;
+}
+.comment-box
+{
+  height:70vh;
+  width:60%;
+  margin:auto;
+  margin-top:40px;
+  border-radius:20px;
+  box-shadow: 2px 5px 10px rgba(0 , 0, 0 , 0.5);
+}
+input
+{
+  width:70%;
+  margin-left:14%;
+  outline:none;
+  border:none;
+  margin-top:40px;
+  height:34px;
+  border-radius: 6px;
+  padding-left: 10px;
+  background-color: rgb(167, 163, 157);
+
+}
+textarea
+{
+  width:70%;
+  margin-left:14%;
+  outline:none;
+  border:none;
+  margin-top:40px;
+  border-radius: 6px;
+  padding-left: 10px;
+  padding-top: 10px;
+  background-color: rgb(167, 163, 157);
+
+}
+.com
+{
+  position: relative;
+  margin-left:35%;
+  top:20px;
+  font-size:30px;
+  color: #17e4eb;
+  font-family: 'MonteCarlo', cursive;
+}
+ .butt
+{
+  position: absolute;
+  left:29%;
+  outline:none;
+  border: none;
+  border-radius:5px;
+  font-size:17px;
+  font-family: sans-serif;
+  background-color: rgb(167, 163, 157);
+  
+}
+.butt:hover
+{
+  transform:scale(1.08);
+  background-color:#17e4eb;
+  transition: all 0.5s ease;
+}
+.social2
+{
+  display: flex;
+  margin-left: 33%;
+  margin-top:-4%;
+}
+.circlen
+{
+  position: relative;
+  margin-left:30px;
+}
+.icom
+{
+  position: relative;
+  margin-left:15px;
+  margin-top:15px;
+}
+
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+    
+  }
+  @media screen and (max-width: 600px)
+  {
+    .main-head
+{   
+    position: relative;
+     font-family: sans-serif;
+     margin-left: -27%;
+     margin-top: 30%;
+     font-size: 19px;
+
+}
+.header
+{
+  background-position:left;
+}
+.icon{
+  font-size:40px;
+}
+ h2
+ {
+     font-size: 20px;
+     margin-left:10px;
+
+ }
+ .ic
+ {
+   margin-top: 5%;
+   width:60%
+ }
+ .quote
+ {
+   visibility: hidden;
+ }
+ .pic
+ {
+   top:6%;
+   left:30%;
+ }
+ .overlay-content
+ { 
+   top:30%;
+   margin-left:-37%;
+ }
+
+ .social
+ {
+   top:50%;
+   left:-2%;
+ }
+ .circle-outer
+ { 
+   height:20px;
+   width: 20px;
+ }
+ .overlay-content a
+ {
+   font-size:30px;
+ }
+ .skill
+ {
+   height:220vh;
+ }
+ .heading
+ {
+    margin-left:35%;
+ }
+ .box
+ {
+   margin-top:50px;
+ }
+ .project
+ {
+   height:110vh;
+ }
+ .slide
+ {
+   margin-top: 50%;
+   width:90vw;
+ }
+ .arrow
+ {
+   margin-top: 108vh;
+ }
+ .aboutme
+ {
+   height:220vh;
+ }
+ .details
+ {
+   height:110vh;
+   width:62vw;
+ }
+ .details p
+ {
+   font-size:17px;
+ 
+ }
+ h3
+ {
+   font-size: 20px;
+   top:17%;
+ }
+ .com
+ {
+   font-size:18px;
+   left:-10%;
+ }
+ .social2
+{
+  display: flex;
+  margin-left: 5%;
+  margin-top:-12%;
+}
+
+  }
+  @media screen and (max-width: 810px) and (min-width: 600px)
+  {
+    .main-head
+    { 
+        font-size:24px;
+        left:30%;
+        margin-top:30%;
+    }
+    .quote
+    {
+      left:10%;
+    }
+    .overlay-content a
+    {
+      font-size:33px;
+    }
+    .social
+    {
+      top:52%;
+    }
+    .aboutme
+    {
+      height:220vh;
+    }
+    .details
+    {
+      height:110vh;
+    }
+    .details p
+    {
+      font-size:20px;
+    
+    }
+    .project
+    {
+      height:110vh;
+    }
+    .slide
+    {
+      margin-top: 10%;
+      width:70vw;
+    }
+    .arrow
+    {
+      top:8vh;
+    }
+    .social2
+    {
+      display: flex;
+      margin-left: 23%;
+      margin-top:-7%;
+    }
+  }
