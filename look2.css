@@ -574,8 +574,8 @@ textarea
  }
  .details
  {
-   height:140vh;
-   width:64vw;
+   height:150vh;
+   width:62vw;
  }
  .details p
  {
@@ -596,7 +596,7 @@ textarea
 {
   display: flex;
   margin-left: -1%;
-  margin-top:-12%;
+  margin-top:-10%;
 }
 
   }
