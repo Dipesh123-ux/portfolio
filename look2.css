@@ -570,7 +570,7 @@ textarea
  }
  .aboutme
  {
-   height:220vh;
+   height:250vh;
  }
  .details
  {
@@ -595,7 +595,7 @@ textarea
  .social2
 {
   display: flex;
-  margin-left: 1%;
+  margin-left: -1%;
   margin-top:-12%;
 }
 
