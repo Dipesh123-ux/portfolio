@@ -519,7 +519,7 @@ textarea
  .pic
  {
    top:6%;
-   left:30%;
+   left:28%;
  }
  .overlay-content
  { 
@@ -595,7 +595,7 @@ textarea
  .social2
 {
   display: flex;
-  margin-left: -1%;
+  margin-left: -1.5%;
   margin-top:-12%;
 }
 
